@@ -1,44 +1,43 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.deivid.domain;
 
-//import jakarta.persistence.*;
 import java.io.Serializable;
 import javax.persistence.*;
 
-/**
- *
- * @author david
- */
+// Marca la clase como una entidad JPA que se mapea a una tabla en la base de datos
 @Entity
-public class Usuario implements Serializable{
+public class Usuario implements Serializable {
 
+    // Define la clave primaria de la entidad
     @Id
-    @Column (name="id_usuario")
-    private int idUser;
-    
+    private int id_usuario;
+
+    // Define otras columnas en la tabla
     private String nombre;
     private String cedula;
     private String email;
     private String direccion;
     private String telefono;
-    private Enum rol;
+    
+    // Define una columna que almacena el rol del usuario usando el enum Rol
+    @Enumerated(EnumType.STRING)
+    private Rol rol;
+    
     private String contrasena;
 
+    // Constructor por defecto
     public Usuario() {
     }
 
-    public int getIdUser() {
-        return idUser;
+    // Getter y Setter para el id del usuario
+    public int getId_usuario() {
+        return id_usuario;
     }
 
-    public void setIdUser(int idUser) {
-        this.idUser = idUser;
+    public void setId_usuario(int id_usuario) {
+        this.id_usuario = id_usuario;
     }
 
+    // Getter y Setter para el nombre del usuario
     public String getNombre() {
         return nombre;
     }
@@ -47,6 +46,7 @@ public class Usuario implements Serializable{
         this.nombre = nombre;
     }
 
+    // Getter y Setter para la cédula del usuario
     public String getCedula() {
         return cedula;
     }
@@ -55,6 +55,7 @@ public class Usuario implements Serializable{
         this.cedula = cedula;
     }
 
+    // Getter y Setter para el email del usuario
     public String getEmail() {
         return email;
     }
@@ -63,6 +64,7 @@ public class Usuario implements Serializable{
         this.email = email;
     }
 
+    // Getter y Setter para la dirección del usuario
     public String getDireccion() {
         return direccion;
     }
@@ -71,6 +73,7 @@ public class Usuario implements Serializable{
         this.direccion = direccion;
     }
 
+    // Getter y Setter para el teléfono del usuario
     public String getTelefono() {
         return telefono;
     }
@@ -79,14 +82,16 @@ public class Usuario implements Serializable{
         this.telefono = telefono;
     }
 
-    public Enum getRol() {
+    // Getter y Setter para el rol del usuario (usando el enum Rol)
+    public Rol getRol() {
         return rol;
     }
 
-    public void setRol(Enum rol) {
+    public void setRol(Rol rol) {
         this.rol = rol;
     }
 
+    // Getter y Setter para la contraseña del usuario
     public String getContrasena() {
         return contrasena;
     }
@@ -95,36 +100,46 @@ public class Usuario implements Serializable{
         this.contrasena = contrasena;
     }
 
+    // Método toString para proporcionar una representación en cadena del usuario
     @Override
     public String toString() {
-        return "Usuario{" + "idUser=" + idUser + ", nombre=" + nombre + ", cedula=" + cedula + ", email=" + email + ", direccion=" + direccion + ", telefono=" + telefono + ", rol=" + rol + ", contrasena=" + contrasena + '}';
+        return "Usuario{" + 
+            "id_usuario=" + id_usuario + 
+            ", nombre=" + nombre + 
+            ", cedula=" + cedula + 
+            ", email=" + email + 
+            ", direccion=" + direccion + 
+            ", telefono=" + telefono + 
+            ", rol=" + rol + 
+            ", contrasena=" + contrasena + 
+            '}';
     }
 
+    // Método hashCode para generar un código hash basado en 'id_usuario'
     @Override
     public int hashCode() {
-        int hash = 3;
-        hash = 47 * hash + this.idUser;
+        int hash = 5;
+        hash = 37 * hash + this.id_usuario;
         return hash;
     }
 
+    // Método equals para comparar dos objetos Usuario por 'id_usuario'
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
-            return true;
+            return true; // Si los objetos son iguales, retorna true
         }
         if (obj == null) {
-            return false;
+            return false; // Si el objeto comparado es null, retorna false
         }
         if (getClass() != obj.getClass()) {
-            return false;
+            return false; // Si los objetos son de clases diferentes, retorna false
         }
         final Usuario other = (Usuario) obj;
-        if (this.idUser != other.idUser) {
-            return false;
+        if (this.id_usuario != other.id_usuario) {
+            return false; // Si los 'id_usuario' son diferentes, retorna false
         }
-        return true;
+        return true; // Si los 'id_usuario' son iguales, retorna true
     }
-    
-    
 
 }
