@@ -1,0 +1,49 @@
+# Directorios y archivos de NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# Dependencias de Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Archivos de configuración del sistema
+.DS_Store
+Thumbs.db
+*.log
+
+# Archivos y directorios relacionados con IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Archivos de configuraciones locales y de usuarios
+*.swp
+*.swo
+*.bak
+
+# Archivos generados automáticamente por el sistema operativo
+*.class
+*.war
+*.jar
+*.ear
+
+# Archivos relacionados con cobertura de código
+coverage/
+.coverage
+*.lcov
+
+# Archivos relacionados con entornos de ejecución
+*.out
+*.pid
+*.seed
+*.pid.lock
