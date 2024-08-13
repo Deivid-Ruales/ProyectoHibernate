@@ -2,29 +2,48 @@ package com.deivid.domain;
 
 import java.io.Serializable;
 import javax.persistence.*;
+import javax.validation.constraints.*;
 
 // Define que esta clase es una entidad JPA, correspondiente a una tabla en la base de datos
 @Entity
 public class Historial_dispositivo implements Serializable {
 
     // Define la clave primaria de la entidad
+    // Se define el generador automático para el id
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id_historial;
 
     // Define una relación muchos-a-uno con la entidad Dispositivo
     @JoinColumn(name = "id_dispositivo")
     @ManyToOne
+    @NotNull(message = "El dispositivo no puede ser nulo")
     private Dispositivo id_dispositivo;
 
     // Define una relación muchos-a-uno con la entidad Turno_trabajo
     @JoinColumn(name = "id_turno")
     @ManyToOne
+    @NotNull(message = "El turno de trabajo no puede ser nulo")
     private Turno_trabajo id_turno;
 
     // Define las columnas adicionales en la tabla
+    // Se definen todas las validaciones necesarias
+    @Pattern(
+            regexp = "^[0-9]+$", 
+            message = "Las almohadillas solo pueden contener números")
     private String almohadillas;
+
+    @Pattern(
+            regexp = "^[0-9]+$", 
+            message = "Las páginas impresas solo pueden contener números")
     private String paginas_impresas;
+
+    @Pattern(
+            regexp = "^[0-9]+$", 
+            message = "Las páginas ADF solo pueden contener números")
     private String paginas_adf;
+
+    @Size(max = 500, message = "Las observaciones no pueden exceder los 500 caracteres")
     private String observaciones;
 
     // Constructor por defecto

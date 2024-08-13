@@ -2,25 +2,42 @@ package com.deivid.domain;
 
 import java.io.Serializable;
 import javax.persistence.*;
+import javax.validation.constraints.*;
 
 // Define que esta clase es una entidad que se mapeará a una tabla en la base de datos
 @Entity
 public class Dispositivo implements Serializable {
 
     // Define la clave primaria de la entidad
+    // Se define el generador automático para el id
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id_dispositivo;
 
     // Define las columnas de la tabla
+    @NotBlank(message = "El tipo no puede estar vacío")
+    @Size(max = 50, message = "El tipo no puede exceder los 50 caracteres")
     private String tipo;
+
+    @NotBlank(message = "La marca no puede estar vacía")
+    @Size(max = 50, message = "La marca no puede exceder los 50 caracteres")
     private String marca;
+
+    @NotBlank(message = "La referencia no puede estar vacía")
+    @Size(max = 50, message = "La referencia no puede exceder los 100 caracteres")
     private String referencia;
+
+    @NotBlank(message = "El número de serie no puede estar vacío")
+    @Size(max = 50, message = "El número de serie no puede exceder los 50 caracteres")
     private String serial_num;
+
+    @Size(max = 500, message = "La descripción no puede exceder los 500 caracteres")
     private String descripcion;
 
     // Define una relación muchos-a-uno con la entidad Usuario y la columna 'id_usuario' en la tabla
     @JoinColumn(name = "id_usuario")
     @ManyToOne
+    @NotNull(message = "El usuario no puede ser nulo")
     private Usuario id_usuario;
 
     // Constructor por defecto

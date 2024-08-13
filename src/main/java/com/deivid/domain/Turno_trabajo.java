@@ -1,33 +1,44 @@
 package com.deivid.domain;
 
 import java.io.Serializable;
+import java.time.LocalDateTime;
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 // Define la entidad JPA que representa la tabla Turno_trabajo en la base de datos
 @Entity
 public class Turno_trabajo implements Serializable {
     
     // Define la clave primaria de la entidad
+    // // Se define el generador automático para el id
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id_turno;
-    
+
+    // Se ponen las validaciones necesarias para los ingresos
     // Define la columna que almacena la fecha y hora de inicio del turno
-    private String fecha_hora_inicio;
-    
+    @NotNull(message = "La fecha y hora de inicio no pueden ser nulas")
+    private LocalDateTime fecha_hora_inicio;
+
     // Define la columna que almacena la fecha y hora de fin del turno
-    private String fecha_hora_fin;
-    
+    @NotNull(message = "La fecha y hora de fin no pueden ser nulas")
+    private LocalDateTime fecha_hora_fin;
+
     // Define la columna que almacena el estado del turno, usando el enum Estado
+    @Enumerated(EnumType.STRING)
+    @NotNull(message = "El estado del turno no puede ser nulo")
     private Estado estado;
-    
+
     // Define una relación muchos-a-uno con la entidad Dispositivo
     @JoinColumn(name = "id_dispositivo")
     @ManyToOne
+    @NotNull(message = "El dispositivo no puede ser nulo")
     private Dispositivo id_dispositivo;
-    
+
     // Define una relación muchos-a-uno con la entidad Usuario
     @JoinColumn(name = "id_usuario")
     @ManyToOne
+    @NotNull(message = "El usuario no puede ser nulo")
     private Usuario id_usuario;
 
     // Constructor por defecto
@@ -44,20 +55,20 @@ public class Turno_trabajo implements Serializable {
     }
 
     // Getter y Setter para la fecha y hora de inicio del turno
-    public String getFecha_hora_inicio() {
+    public LocalDateTime getFecha_hora_inicio() {
         return fecha_hora_inicio;
     }
 
-    public void setFecha_hora_inicio(String fecha_hora_inicio) {
+    public void setFecha_hora_inicio(LocalDateTime fecha_hora_inicio) {
         this.fecha_hora_inicio = fecha_hora_inicio;
     }
 
     // Getter y Setter para la fecha y hora de fin del turno
-    public String getFecha_hora_fin() {
+    public LocalDateTime getFecha_hora_fin() {
         return fecha_hora_fin;
     }
 
-    public void setFecha_hora_fin(String fecha_hora_fin) {
+    public void setFecha_hora_fin(LocalDateTime fecha_hora_fin) {
         this.fecha_hora_fin = fecha_hora_fin;
     }
 

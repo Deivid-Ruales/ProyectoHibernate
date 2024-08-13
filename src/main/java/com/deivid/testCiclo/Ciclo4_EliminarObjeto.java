@@ -10,7 +10,7 @@ public class Ciclo4_EliminarObjeto extends GenericDAO {
         Ciclo4_EliminarObjeto ciclo = new Ciclo4_EliminarObjeto();
         
         // Llamar al método eliminarUsuarioPorId con el ID 7 para eliminar el usuario correspondiente
-        ciclo.eliminarUsuarioPorId(8);
+        ciclo.eliminarUsuarioPorId(10);
     }
 
     // Método para eliminar un usuario de la base de datos usando su ID

@@ -1,0 +1,16 @@
+com\deivid\dao\Historial_dispositivoDAO.class
+com\deivid\domain\Usuario.class
+com\deivid\domain\Historial_dispositivo.class
+com\deivid\dao\Turno_trabajoDAO.class
+com\deivid\testCiclo\Ciclo3_ModificarObjeto.class
+com\deivid\test\Test.class
+com\deivid\testCiclo\Ciclo1_CrearObjeto.class
+com\deivid\testCiclo\Ciclo4_EliminarObjeto.class
+com\deivid\dao\GenericDAO.class
+com\deivid\dao\UsuarioDAO.class
+com\deivid\domain\Dispositivo.class
+com\deivid\domain\Turno_trabajo.class
+com\deivid\dao\DispositivoDAO.class
+com\deivid\domain\Rol.class
+com\deivid\testCiclo\Ciclo2_ObtenerObjeto.class
+com\deivid\domain\Estado.class

@@ -2,28 +2,48 @@ package com.deivid.domain;
 
 import java.io.Serializable;
 import javax.persistence.*;
+import javax.validation.constraints.*;
 
 // Marca la clase como una entidad JPA que se mapea a una tabla en la base de datos
 @Entity
 public class Usuario implements Serializable {
 
     // Define la clave primaria de la entidad
+    // Se define el generador automático para el id
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id_usuario;
-
+    
     // Define otras columnas en la tabla
+    // Se ponen las validaciones necesarias para el ingreso de datos que no sean nulos y que correspondan al atributo elegido
+    @NotNull(message = "Debe ingresar un nombre válido")
     private String nombre;
+
+    @NotNull(message = "Debe ingresar un número de cédula válido")
     private String cedula;
+
+    @NotNull(message = "Debe ingresar un email válido")
+    @Email(message = "El email debe tener un formato válido")
     private String email;
+
+    @NotNull(message = "Debe ingresar una dirección válida")
     private String direccion;
+
+    @NotNull(message = "Debe ingresar un número de teléfono válido")
     private String telefono;
-    
-    // Define una columna que almacena el rol del usuario usando el enum Rol
-    @Enumerated(EnumType.STRING)
-    private Rol rol;
-    
+
+    @NotNull(message = "Debe ingresar una contraseña")
+    @Size(min = 8, message = "La contraseña debe tener al menos 8 caracteres")
+    @Pattern(
+        regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,20}$",
+        message = "La contraseña debe contener al menos una letra mayúscula, una minúscula, un número y un carácter especial")
     private String contrasena;
 
+    // Define una columna que almacena el rol del usuario usando el enum Rol
+    @Enumerated(EnumType.STRING)
+    @NotNull(message = "Debe ingresar un rol válido")
+    private Rol rol;
+    
     // Constructor por defecto
     public Usuario() {
     }
