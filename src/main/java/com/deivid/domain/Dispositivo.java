@@ -104,7 +104,7 @@ public class Dispositivo implements Serializable {
     // Método toString para imprimir la información del dispositivo
     @Override
     public String toString() {
-        return "Dispositivo{" + "id_dispositivo=" + id_dispositivo + ", tipo=" + tipo + ", marca=" + marca + ", referencia=" + referencia + ", serial_num=" + serial_num + ", descripcion=" + descripcion + ", id_usuario=" + id_usuario + '}';
+        return "Dispositivo {\n" + "id_dispositivo=" + id_dispositivo + ",\n tipo=" + tipo + ",\n marca=" + marca + ",\n referencia=" + referencia + ",\n serial_num=" + serial_num + ",\n descripcion=" + descripcion + ",\n id_usuario=" + id_usuario + '}';
     }
 
     // Método hashCode para generar un código hash basado en 'id_dispositivo'

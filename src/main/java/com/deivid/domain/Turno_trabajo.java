@@ -8,7 +8,7 @@ import javax.validation.constraints.NotNull;
 // Define la entidad JPA que representa la tabla Turno_trabajo en la base de datos
 @Entity
 public class Turno_trabajo implements Serializable {
-    
+
     // Define la clave primaria de la entidad
     // // Se define el generador automático para el id
     @Id
@@ -21,7 +21,6 @@ public class Turno_trabajo implements Serializable {
     private LocalDateTime fecha_hora_inicio;
 
     // Define la columna que almacena la fecha y hora de fin del turno
-    @NotNull(message = "La fecha y hora de fin no pueden ser nulas")
     private LocalDateTime fecha_hora_fin;
 
     // Define la columna que almacena el estado del turno, usando el enum Estado
@@ -102,14 +101,14 @@ public class Turno_trabajo implements Serializable {
     // Método toString para proporcionar una representación en cadena del turno de trabajo
     @Override
     public String toString() {
-        return "Turno_trabajo{" + 
-            "id_turno=" + id_turno + 
-            ", fecha_hora_inicio=" + fecha_hora_inicio + 
-            ", fecha_hora_fin=" + fecha_hora_fin + 
-            ", estado=" + estado + 
-            ", id_dispositivo=" + id_dispositivo + 
-            ", id_usuario=" + id_usuario + 
-            '}';
+        return "Turno_trabajo{\n"
+                + "id_turno=" + id_turno
+                + ",\n fecha_hora_inicio=" + fecha_hora_inicio
+                + ",\n fecha_hora_fin=" + fecha_hora_fin
+                + ",\n estado=" + estado
+                + ",\n id_dispositivo=" + id_dispositivo
+                + ",\n id_usuario=" + id_usuario
+                + '}';
     }
 
     // Método hashCode para generar un código hash basado en 'id_turno'

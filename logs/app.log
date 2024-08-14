@@ -1,56 +1,357 @@
-2024-08-12 22:30:24 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+2024-08-13 20:20:44 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
 	name: sari
 	...]
-2024-08-12 22:30:24 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.20.Final}
-2024-08-12 22:30:24 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
-2024-08-12 22:30:24 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2024-08-12 22:30:24 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2024-08-12 22:30:24 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/sari]
-2024-08-12 22:30:24 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
-2024-08-12 22:30:24 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
-2024-08-12 22:30:24 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
-2024-08-12 22:30:25 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2024-08-12 22:30:26 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
-2024-08-12 22:30:26 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/sari]
-2024-08-12 22:31:00 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+2024-08-13 20:20:44 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.20.Final}
+2024-08-13 20:20:44 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2024-08-13 20:20:45 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-08-13 20:20:45 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-13 20:20:45 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/sari]
+2024-08-13 20:20:45 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-13 20:20:45 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-13 20:20:45 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-13 20:20:45 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-08-13 20:20:46 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2024-08-13 20:20:46 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1062, SQLState: 23000
+2024-08-13 20:20:46 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Duplicate entry '1085303555' for key 'usuario.cedula'
+2024-08-13 20:20:46 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/sari]
+2024-08-13 20:22:02 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
 	name: sari
 	...]
-2024-08-12 22:31:00 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.20.Final}
-2024-08-12 22:31:00 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
-2024-08-12 22:31:00 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2024-08-12 22:31:01 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2024-08-12 22:31:01 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/sari]
-2024-08-12 22:31:01 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
-2024-08-12 22:31:01 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
-2024-08-12 22:31:01 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
-2024-08-12 22:31:01 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2024-08-12 22:31:01 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
-2024-08-12 22:31:02 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/sari]
-2024-08-12 22:31:32 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+2024-08-13 20:22:02 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.20.Final}
+2024-08-13 20:22:02 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2024-08-13 20:22:03 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-08-13 20:22:03 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-13 20:22:03 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/sari]
+2024-08-13 20:22:03 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-13 20:22:03 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-13 20:22:03 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-13 20:22:03 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-08-13 20:22:04 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2024-08-13 20:22:04 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/sari]
+2024-08-13 20:23:19 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
 	name: sari
 	...]
-2024-08-12 22:31:32 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.20.Final}
-2024-08-12 22:31:32 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
-2024-08-12 22:31:32 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2024-08-12 22:31:33 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2024-08-12 22:31:33 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/sari]
-2024-08-12 22:31:33 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
-2024-08-12 22:31:33 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
-2024-08-12 22:31:33 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
-2024-08-12 22:31:33 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2024-08-12 22:31:33 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
-2024-08-12 22:31:34 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/sari]
-2024-08-12 22:35:34 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+2024-08-13 20:23:19 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.20.Final}
+2024-08-13 20:23:19 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2024-08-13 20:23:20 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-08-13 20:23:20 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-13 20:23:20 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/sari]
+2024-08-13 20:23:20 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-13 20:23:20 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-13 20:23:20 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-13 20:23:20 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-08-13 20:23:21 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2024-08-13 20:23:21 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/sari]
+2024-08-13 20:36:13 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
 	name: sari
 	...]
-2024-08-12 22:35:34 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.20.Final}
-2024-08-12 22:35:34 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
-2024-08-12 22:35:34 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2024-08-12 22:35:35 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2024-08-12 22:35:35 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/sari]
-2024-08-12 22:35:35 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
-2024-08-12 22:35:35 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
-2024-08-12 22:35:35 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
-2024-08-12 22:35:35 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2024-08-12 22:35:35 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
-2024-08-12 22:35:36 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/sari]
+2024-08-13 20:36:13 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.20.Final}
+2024-08-13 20:36:13 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2024-08-13 20:36:13 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-08-13 20:36:13 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-13 20:36:13 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/sari]
+2024-08-13 20:36:13 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-13 20:36:13 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-13 20:36:13 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-13 20:36:13 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-08-13 20:36:14 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2024-08-13 20:36:14 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1292, SQLState: 22001
+2024-08-13 20:36:14 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Data truncation: Incorrect datetime value: '169087565-03-15 04:51:43' for column 'fecha_hora_inicio' at row 1
+2024-08-13 20:36:14 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/sari]
+2024-08-13 20:39:41 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: sari
+	...]
+2024-08-13 20:39:41 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.20.Final}
+2024-08-13 20:39:41 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2024-08-13 20:39:41 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-08-13 20:39:41 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-13 20:39:41 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/sari]
+2024-08-13 20:39:41 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-13 20:39:41 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-13 20:39:41 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-13 20:39:42 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-08-13 20:39:42 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2024-08-13 20:39:43 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/sari]
+2024-08-13 21:01:04 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: sari
+	...]
+2024-08-13 21:01:04 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.20.Final}
+2024-08-13 21:01:04 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2024-08-13 21:01:05 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-08-13 21:01:05 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-13 21:01:05 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/sari]
+2024-08-13 21:01:05 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-13 21:01:05 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-13 21:01:05 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-13 21:01:05 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-08-13 21:01:06 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2024-08-13 21:01:06 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/sari]
+2024-08-13 22:21:54 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: sari
+	...]
+2024-08-13 22:21:54 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.20.Final}
+2024-08-13 22:21:54 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2024-08-13 22:21:55 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-08-13 22:21:55 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-13 22:21:55 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/sari]
+2024-08-13 22:21:55 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-13 22:21:55 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-13 22:21:55 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-13 22:21:55 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-08-13 22:21:56 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2024-08-13 22:21:56 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/sari]
+2024-08-13 22:24:36 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: sari
+	...]
+2024-08-13 22:24:36 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.20.Final}
+2024-08-13 22:24:36 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2024-08-13 22:24:36 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-08-13 22:24:36 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-13 22:24:36 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/sari]
+2024-08-13 22:24:36 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-13 22:24:36 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-13 22:24:36 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-13 22:24:37 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-08-13 22:24:37 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2024-08-13 22:25:09 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: sari
+	...]
+2024-08-13 22:25:09 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.20.Final}
+2024-08-13 22:25:09 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2024-08-13 22:25:09 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-08-13 22:25:09 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-13 22:25:09 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/sari]
+2024-08-13 22:25:09 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-13 22:25:09 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-13 22:25:09 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-13 22:25:10 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-08-13 22:25:10 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2024-08-13 22:25:11 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/sari]
+2024-08-13 22:26:46 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: sari
+	...]
+2024-08-13 22:26:46 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.20.Final}
+2024-08-13 22:26:46 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2024-08-13 22:26:47 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-08-13 22:26:47 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-13 22:26:47 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/sari]
+2024-08-13 22:26:47 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-13 22:26:47 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-13 22:26:47 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-13 22:26:47 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-08-13 22:26:48 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2024-08-13 22:26:49 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/sari]
+2024-08-13 22:28:17 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: sari
+	...]
+2024-08-13 22:28:17 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.20.Final}
+2024-08-13 22:28:17 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2024-08-13 22:28:17 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-08-13 22:28:18 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-13 22:28:18 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/sari]
+2024-08-13 22:28:18 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-13 22:28:18 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-13 22:28:18 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-13 22:28:18 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-08-13 22:28:18 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2024-08-13 22:28:19 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/sari]
+2024-08-13 22:30:36 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: sari
+	...]
+2024-08-13 22:30:36 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.20.Final}
+2024-08-13 22:30:36 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2024-08-13 22:30:36 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-08-13 22:30:36 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-13 22:30:36 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/sari]
+2024-08-13 22:30:36 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-13 22:30:36 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-13 22:30:36 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-13 22:30:36 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-08-13 22:30:37 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2024-08-13 22:30:37 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/sari]
+2024-08-13 22:34:52 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: sari
+	...]
+2024-08-13 22:34:52 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.20.Final}
+2024-08-13 22:34:52 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2024-08-13 22:34:52 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-08-13 22:34:53 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-13 22:34:53 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/sari]
+2024-08-13 22:34:53 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-13 22:34:53 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-13 22:34:53 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-13 22:34:53 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-08-13 22:34:53 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2024-08-13 22:34:54 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/sari]
+2024-08-13 22:35:28 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: sari
+	...]
+2024-08-13 22:35:28 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.20.Final}
+2024-08-13 22:35:28 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2024-08-13 22:35:28 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-08-13 22:35:28 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-13 22:35:28 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/sari]
+2024-08-13 22:35:28 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-13 22:35:28 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-13 22:35:28 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-13 22:35:29 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-08-13 22:35:29 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2024-08-13 22:35:30 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/sari]
+2024-08-13 22:35:58 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: sari
+	...]
+2024-08-13 22:35:58 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.20.Final}
+2024-08-13 22:35:58 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2024-08-13 22:35:58 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-08-13 22:35:58 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-13 22:35:58 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/sari]
+2024-08-13 22:35:58 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-13 22:35:58 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-13 22:35:58 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-13 22:35:58 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-08-13 22:35:59 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2024-08-13 22:35:59 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/sari]
+2024-08-13 22:38:48 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: sari
+	...]
+2024-08-13 22:38:48 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.20.Final}
+2024-08-13 22:38:48 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2024-08-13 22:38:49 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-08-13 22:38:49 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-13 22:38:49 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/sari]
+2024-08-13 22:38:49 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-13 22:38:49 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-13 22:38:49 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-13 22:38:49 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-08-13 22:38:50 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2024-08-13 22:38:50 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/sari]
+2024-08-13 22:51:48 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: sari
+	...]
+2024-08-13 22:51:48 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.20.Final}
+2024-08-13 22:51:48 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2024-08-13 22:51:49 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-08-13 22:51:49 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-13 22:51:49 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/sari]
+2024-08-13 22:51:49 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-13 22:51:49 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-13 22:51:49 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-13 22:51:49 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-08-13 22:51:50 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2024-08-13 22:51:50 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/sari]
+2024-08-13 22:52:18 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: sari
+	...]
+2024-08-13 22:52:18 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.20.Final}
+2024-08-13 22:52:18 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2024-08-13 22:52:19 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-08-13 22:52:19 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-13 22:52:19 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/sari]
+2024-08-13 22:52:19 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-13 22:52:19 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-13 22:52:19 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-13 22:52:19 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-08-13 22:52:20 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2024-08-13 22:52:20 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/sari]
+2024-08-13 22:52:57 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: sari
+	...]
+2024-08-13 22:52:57 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.20.Final}
+2024-08-13 22:52:57 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2024-08-13 22:52:57 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-08-13 22:52:58 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-13 22:52:58 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/sari]
+2024-08-13 22:52:58 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-13 22:52:58 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-13 22:52:58 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-13 22:52:58 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-08-13 22:52:58 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2024-08-13 22:52:59 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/sari]
+2024-08-13 22:53:16 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: sari
+	...]
+2024-08-13 22:53:16 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.20.Final}
+2024-08-13 22:53:16 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2024-08-13 22:53:16 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-08-13 22:53:16 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-13 22:53:16 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/sari]
+2024-08-13 22:53:16 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-13 22:53:16 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-13 22:53:16 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-13 22:53:17 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-08-13 22:53:17 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2024-08-13 22:53:18 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/sari]
+2024-08-13 23:03:48 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: sari
+	...]
+2024-08-13 23:03:48 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.20.Final}
+2024-08-13 23:03:48 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2024-08-13 23:03:48 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-08-13 23:03:48 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-13 23:03:48 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/sari]
+2024-08-13 23:03:48 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-13 23:03:48 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-13 23:03:48 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-13 23:03:49 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-08-13 23:03:49 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2024-08-13 23:03:50 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/sari]
+2024-08-13 23:04:42 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: sari
+	...]
+2024-08-13 23:04:42 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.20.Final}
+2024-08-13 23:04:42 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2024-08-13 23:04:42 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-08-13 23:04:43 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-13 23:04:43 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/sari]
+2024-08-13 23:04:43 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-13 23:04:43 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-13 23:04:43 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-13 23:04:43 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-08-13 23:04:43 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2024-08-13 23:04:44 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/sari]
+2024-08-13 23:05:04 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: sari
+	...]
+2024-08-13 23:05:04 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.20.Final}
+2024-08-13 23:05:04 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2024-08-13 23:05:04 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-08-13 23:05:05 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-13 23:05:05 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/sari]
+2024-08-13 23:05:05 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-13 23:05:05 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-13 23:05:05 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-13 23:05:05 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-08-13 23:05:05 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2024-08-13 23:05:06 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1451, SQLState: 23000
+2024-08-13 23:05:06 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Cannot delete or update a parent row: a foreign key constraint fails (`sari`.`historial_dispositivo`, CONSTRAINT `historial_dispositivo_ibfk_2` FOREIGN KEY (`id_turno`) REFERENCES `turno_trabajo` (`id_turno`))
+2024-08-13 23:05:06 [main] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl - HHH000010: On release of batch it still contained JDBC statements
+2024-08-13 23:05:06 [main] ERROR org.hibernate.internal.ExceptionMapperStandardImpl - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2024-08-13 23:05:06 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/sari]
+2024-08-13 23:07:15 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: sari
+	...]
+2024-08-13 23:07:15 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.20.Final}
+2024-08-13 23:07:15 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2024-08-13 23:07:15 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-08-13 23:07:15 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-13 23:07:15 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/sari]
+2024-08-13 23:07:15 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-13 23:07:15 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-13 23:07:15 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-13 23:07:16 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-08-13 23:07:16 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2024-08-13 23:07:17 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/sari]
+2024-08-13 23:08:58 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: sari
+	...]
+2024-08-13 23:08:59 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.20.Final}
+2024-08-13 23:08:59 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2024-08-13 23:08:59 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-08-13 23:08:59 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-13 23:08:59 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/sari]
+2024-08-13 23:08:59 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-13 23:08:59 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-13 23:08:59 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-13 23:08:59 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-08-13 23:09:00 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2024-08-13 23:09:00 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/sari]

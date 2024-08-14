@@ -13,7 +13,7 @@ public class Usuario implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id_usuario;
-    
+
     // Define otras columnas en la tabla
     // Se ponen las validaciones necesarias para el ingreso de datos que no sean nulos y que correspondan al atributo elegido
     @NotNull(message = "Debe ingresar un nombre válido")
@@ -35,15 +35,15 @@ public class Usuario implements Serializable {
     @NotNull(message = "Debe ingresar una contraseña")
     @Size(min = 8, message = "La contraseña debe tener al menos 8 caracteres")
     @Pattern(
-        regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,20}$",
-        message = "La contraseña debe contener al menos una letra mayúscula, una minúscula, un número y un carácter especial")
+            regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,20}$",
+            message = "La contraseña debe contener al menos una letra mayúscula, una minúscula, un número y un carácter especial")
     private String contrasena;
 
     // Define una columna que almacena el rol del usuario usando el enum Rol
     @Enumerated(EnumType.STRING)
     @NotNull(message = "Debe ingresar un rol válido")
     private Rol rol;
-    
+
     // Constructor por defecto
     public Usuario() {
     }
@@ -123,16 +123,16 @@ public class Usuario implements Serializable {
     // Método toString para proporcionar una representación en cadena del usuario
     @Override
     public String toString() {
-        return "Usuario{" + 
-            "id_usuario=" + id_usuario + 
-            ", nombre=" + nombre + 
-            ", cedula=" + cedula + 
-            ", email=" + email + 
-            ", direccion=" + direccion + 
-            ", telefono=" + telefono + 
-            ", rol=" + rol + 
-            ", contrasena=" + contrasena + 
-            '}';
+        return "Usuario{\n"
+                + "id_usuario=" + id_usuario
+                + ",\n nombre=" + nombre
+                + ",\n cedula=" + cedula
+                + ",\n email=" + email
+                + ",\n direccion=" + direccion
+                + ",\n telefono=" + telefono
+                + ",\n rol=" + rol
+                + ",\n contrasena=" + contrasena
+                + '}';
     }
 
     // Método hashCode para generar un código hash basado en 'id_usuario'

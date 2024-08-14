@@ -29,17 +29,17 @@ public class Historial_dispositivo implements Serializable {
     // Define las columnas adicionales en la tabla
     // Se definen todas las validaciones necesarias
     @Pattern(
-            regexp = "^[0-9]+$", 
+            regexp = "^[0-9]+$",
             message = "Las almohadillas solo pueden contener números")
     private String almohadillas;
 
     @Pattern(
-            regexp = "^[0-9]+$", 
+            regexp = "^[0-9]+$",
             message = "Las páginas impresas solo pueden contener números")
     private String paginas_impresas;
 
     @Pattern(
-            regexp = "^[0-9]+$", 
+            regexp = "^[0-9]+$",
             message = "Las páginas ADF solo pueden contener números")
     private String paginas_adf;
 
@@ -110,15 +110,15 @@ public class Historial_dispositivo implements Serializable {
     // Método toString para mostrar la información del historial del dispositivo
     @Override
     public String toString() {
-        return "Historial_dispositivo{" + 
-            "id_historial=" + id_historial + 
-            ", id_dispositivo=" + id_dispositivo + 
-            ", id_turno=" + id_turno + 
-            ", almohadillas=" + almohadillas + 
-            ", paginas_impresas=" + paginas_impresas + 
-            ", paginas_adf=" + paginas_adf + 
-            ", observaciones=" + observaciones + 
-            '}';
+        return "Historial_dispositivo{\n"
+                + "id_historial=" + id_historial
+                + ",\n id_dispositivo=" + id_dispositivo
+                + ",\n id_turno=" + id_turno
+                + ",\n almohadillas=" + almohadillas
+                + ",\n paginas_impresas=" + paginas_impresas
+                + ",\n paginas_adf=" + paginas_adf
+                + ",\n observaciones=" + observaciones
+                + '}';
     }
 
     // Método hashCode para generar un código hash basado en 'id_historial'
